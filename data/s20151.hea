@@ -1,0 +1,56 @@
+s20151 2 250 21300000 14:30:00 11/12/1986
+s20151.dat 212 200/mV 12 0 -38 18207 0 V4
+s20151.dat 212 200/mV 12 0 6 -7963 0 MLIII
+#Age: 62  Sex: M
+#Comments: 
+#  Lead 0:
+#    Time 3:03:46
+#    This episode demonstrates slight ST scooping depression
+#    which corresponds to the terminal portion of the ischemic
+#    ST elevation in lead 1. (There are many such episodes in
+#    lead 0.)
+#  Lead 1:
+#    Time 2:26:30
+#    This is an example of a definite ischemic episode, but
+#    its amplitude was below the protocol threshold, and hence
+#    it was not annotated. There are a number of such examples
+#    in this record.
+#  An excerpt of this recording is included in the European
+#  ST-T Database (record e0103).
+#Symptoms during Holter recording: No data
+#Diagnoses: 
+#  Prinzmetal's angina
+#  Coronary artery disease
+#Treatment:
+#  Medications: 
+#    Nitrates
+#    Diltiazem
+#  Balloon Angioplasty: No data
+#  Coronary Artery bypass Grafting: No data
+#History: 
+#  Smoker, hypertriglyceridemia
+#  Hypertension: No
+#  Left ventricular hypertrophy: No
+#  Cardiomyopathy: No
+#  Valve disease: No
+#  Electrolyte abnormalities: No
+#  Hypercapnia, anemia, hypotension, hyperventilation: No
+#  Atrioventricular nodal conduction delay: No
+#  Intraventricular conduction block: No
+#  Previous Myocardial Infarction: No
+#  Previous tests:
+#    ECG stress test: yes
+#      Date: No Data
+#      Findings: Inferior ST elevation, no pain
+#    Thallium/Stress echo: No data
+#    Left ventricular function: 
+#      Normal
+#    Echocardiogram: No data
+#    Coronary Arteriography: 
+#      90 % stenosis right coronary artery
+#    Baseline ECG: 
+#      Inferior negative T waves
+#      No arrhythmias
+#Holter Recording:
+#  Date: 11/12/1986
+#  Recorder: ICR

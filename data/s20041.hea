@@ -1,0 +1,62 @@
+s20041 2 250 21516500 12:06:00 21/05/1997
+s20041.dat 212 200/mV 12 0 -150 27020 0 ECG
+s20041.dat 212 200/mV 12 0 -95 430 0 ECG
+#Age: 60  Sex: M
+#Comments:
+#  This is a difficult record. The baseline ST segment
+#  is abnormal, it is scooped and slightly depressed.
+#  There are a number of episodes of ST depression
+#  associated with increased heart rate, some of which
+#  are quite prolonged. These events were suggestive of
+#  ischemia, and were so labeled.
+#  Lead 0 shows many ischemic episodes and a few axis shifts.
+#  Lead 1 shows many ischemic episodes, and the morphology of
+#  the QRST complexes is quite similar to those of lead 0.
+#  Electrode locations were not recorded.
+#Symptoms during Holter recording: None reported
+#Diagnoses: 
+#  Coronary artery disease
+#  Previous coronary artery bypass grafting, 1986
+#  Congestive heart failure
+#  Chronic obstructive pulmonary disease
+#  Previous transurethral resection of the prostate
+#  Chronic renal failure (serum creatinine = 2.2)
+#Treatment:
+#  Medications: 
+#    Nifedipine
+#    Isordil
+#    Metoprolol
+#    Captopril
+#    Lasix
+#    KCl
+#    Restoril
+#    Aspirin
+#  Balloon Angioplasty: No
+#  Coronary Artery bypass Grafting: Yes, 1986
+#History: 
+#  Exertional angina, dyspnea on exertion
+#  Hypertension: No
+#  Left ventricular hypertrophy: Yes
+#  Cardiomyopathy: No
+#  Valve disease: No
+#  Electrolyte abnormalities: No
+#  Hypercapnia, anemia, hypotension, hyperventilation: No
+#  Atrioventricular nodal conduction delay: No
+#  Intraventricular conduction block: Incomplete right bundle branch block
+#  Previous Myocardial Infarction: Yes, unknown date
+#  Previous tests:
+#    ECG stress test: No
+#    Thallium/Stress echo: No
+#    Left ventricular function: No data
+#    Echocardiogram: No data
+#    Coronary Arteriography: 
+#      June, 1997 - 99%left main coronary artery, 100%left anterior descending coronary artery, 100%left circumflex coronary artery. Internal mammary artery graft open but left anterior descending coronary artery occluded below anastamosis
+#    Baseline ECG: 
+#      Normal sinus rhythm at 66 bpm
+#      Left ventricular hypertrophy
+#      Previous anterolateral myocardial infarction
+#      Inferior ischemia
+#      Possible old inferior myocardial infarction
+#Holter Recording:
+#  Date: 21/05/1997
+#  Recorder: ICR

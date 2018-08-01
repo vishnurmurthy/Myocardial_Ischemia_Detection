@@ -1,0 +1,44 @@
+s20601 2 250 21300000 14:44:00 11/07/1988
+s20601.dat 212 200/mV 12 0 -21 -431 0 V4
+s20601.dat 212 200/mV 12 0 12 -12302 0 MLIII
+#Age: 46  Sex: F
+#Comments:
+#  There is an ischemic episode in lead 1 at 22:22:30
+#  which is corrupted with noise. This patient demonstrated
+#  a few ischemic episodes, manifested by ST depression
+#  in both leads. The changes were minimal, and in some
+#  cases the associated heart rate increases introduced
+#  severe noise.
+#Symptoms during Holter recording: No data
+#Diagnoses:
+#  Syndrome X
+#Treatment:
+#  Medications: None
+#  Balloon Angioplasty: No data
+#  Coronary Artery bypass Grafting: No data
+#History: 
+#  Effort and resting angina
+#  Hypertension: No
+#  Left ventricular hypertrophy: No
+#  Cardiomyopathy: No
+#  Valve disease: No
+#  Electrolyte abnormalities: No
+#  Hypercapnia, anemia, hypotension, hyperventilation: No
+#  Atrioventricular nodal conduction delay: No
+#  Intraventricular conduction block: No
+#  Previous Myocardial Infarction: No
+#  Previous tests:
+#    ECG stress test: Yes
+#      Date: No Data
+#      Findings: Positive for ST depression of 0.1 mV in V3-V6
+#    Thallium/Stress echo: No data
+#    Left ventricular function: 
+#      Normal
+#    Echocardiogram: No data
+#    Coronary Arteriography: 
+#      Normal coronary tree
+#    Baseline ECG: 
+#      Normal
+#Holter Recording:
+#  Date: 11/07/1988
+#  Recorder: ICR

@@ -1,0 +1,47 @@
+s20191 2 250 21600000 10:20:00 16/11/1991
+s20191.dat 212 200/mV 12 0 -44 -18040 0 MLIII
+s20191.dat 212 200/mV 12 0 -172 18724 0 V4
+#Age: 66  Sex: M
+#Comments: 
+#  Lead 0:
+#    From 1:11:14 to 1:12:54
+#    This region is too noisy to annotate with any certainty
+#    but is quite likely an ischemic episode.
+#  Lead 1:
+#    From 1:28:42 to 1:30:16
+#    Slight elevation of ST segment and increase in its positive
+#    slope is seen. This change correlates with more definite
+#    ischemic change in lead 0. Thus, this episode is labeled
+#    "ischemic".
+#Symptoms during Holter recording: No data
+#Diagnoses: 
+#  Prinzmetal's angina
+#  Coronary artery disease 
+#Treatment:
+#  Medications: No
+#  Balloon Angioplasty: No data
+#  Coronary Artery bypass Grafting: No data
+#History: 
+#  Smoker, hypercholesterolemia 
+#  Hypertension: No
+#  Left ventricular hypertrophy: No
+#  Cardiomyopathy: No
+#  Valve disease: No
+#  Electrolyte abnormalities: No
+#  Hypercapnia, anemia, hypotension, hyperventilation: No
+#  Atrioventricular nodal conduction delay: No
+#  Intraventricular conduction block: No
+#  Previous Myocardial Infarction: No
+#  Previous tests:
+#    ECG stress test: No data 
+#    Thallium/Stress echo: No data
+#    Left ventricular function: 
+#      Normal
+#    Echocardiogram: No data
+#    Coronary Arteriography: 
+#      Left anterior descending coronary artery 50% stenosis, right coronary artery 90% stenosis
+#    Baseline ECG: 
+#      Normal
+#Holter Recording:
+#  Date: 16/11/1991
+#  Recorder: Remco

@@ -1,0 +1,48 @@
+s20031 2 250 21467247  9:24:00 07/01/1993
+s20031.dat 212 200/mV 12 0 21 -12924 0 ECG
+s20031.dat 212 200/mV 12 0 23 21900 0 ECG
+#Age: 55  Sex: M
+#Comments:
+#  This is a very difficult record. There are a number of
+#  definite ischemic episodes which are associated with
+#  increases in heart rate. Some of the lower amplitude
+#  episodes are ambiguous (ischemia vs. rate-related ST
+#  changes). Most of those that had a characteristic
+#  temporal course and that showed a slight amount of
+#  ST flattening were labeled as ischemic episodes. There
+#  were definitely a couple of long episodes that were
+#  rate-related.
+#  Electrode locations were not recorded.
+#Symptoms during Holter recording: No data
+#Diagnoses: 
+#  Coronary artery disease
+#  Previous myocardial infarction
+#Treatment:
+#  Medications: 
+#    Beta-blocker
+#    Calcium channel blocker
+#    Aspirin
+#    Lipitor
+#  Balloon Angioplasty: Yes
+#  Coronary Artery bypass Grafting: No
+#History: 
+#  Hypertension: Yes
+#  Left ventricular hypertrophy: No data
+#  Cardiomyopathy: No data
+#  Valve disease: No data
+#  Electrolyte abnormalities: No data
+#  Hypercapnia, anemia, hypotension, hyperventilation: No data
+#  Atrioventricular nodal conduction delay: No data
+#  Intraventricular conduction block: No data
+#  Previous Myocardial Infarction: Yes
+#  Previous tests:
+#    ECG stress test: No data
+#    Thallium/Stress echo: No data
+#    Left ventricular function: No data
+#    Echocardiogram: No data
+#    Coronary Arteriography: 
+#      Lesions in right coronary artery, left circumflex coronary artery
+#    Baseline ECG: No data
+#Holter Recording:
+#  Date: 07/01/1993
+#  Recorder: No data

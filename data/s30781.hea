@@ -1,0 +1,46 @@
+s30781 3 250 20138750 11:01:00 20/01/2000
+s30781.dat 212 200/mV 12 0 -4 -17829 0 E-S
+s30781.dat 212 200/mV 12 0 42 11142 0 A-S
+s30781.dat 212 200/mV 12 0 16 25775 0 A-I
+#Age: 84  Sex: F
+#Comments: 
+#  Right bundle branch block is present in this record.
+#  Several rate-related ST changes were present in lead
+#  0. There were clear-cut axis shifts seen most clearly
+#  in leads 1 and 2. One ischemic episode was found in
+#  lead 1 and 2. There is QRS fiducial point slippage
+#  particularly in lead 0.
+#Symptoms during Holter recording: None reported
+#Diagnoses: 
+#  Coronary artery disease
+#  Previous coronary artery bypass grafting
+#  Hyperlipidemia
+#Treatment:
+#  Medications: 
+#    Lipitor
+#    Aspirin
+#  Balloon Angioplasty: No
+#  Coronary Artery bypass Grafting: Yes, in 1983
+#History: 
+#  Hypertension: No data
+#  Left ventricular hypertrophy: No data
+#  Cardiomyopathy: No data
+#  Valve disease: No data
+#  Electrolyte abnormalities: No data
+#  Hypercapnia, anemia, hypotension, hyperventilation: No data
+#  Atrioventricular nodal conduction delay: No data
+#  Intraventricular conduction block: Right bundle branch block
+#  Previous Myocardial Infarction: No data
+#  Previous tests:
+#    ECG stress test: Yes
+#      Date: January, 2000
+#      Findings: Exercise-induced ischemia
+#    Thallium/Stress echo: Ejection fraction 40%, postero-basal and infero-apical dyskinesia.
+#    Left ventricular function: 
+#      Abnormal - ejection fraction 40%
+#    Echocardiogram: No data
+#    Coronary Arteriography: No data
+#    Baseline ECG: No data
+#Holter Recording:
+#  Date: 20/01/2000
+#  Recorder: Zymed

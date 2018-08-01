@@ -1,0 +1,45 @@
+s20431 2 250 21472500  9:25:00 10/12/1991
+s20431.dat 212 200/mV 12 0 -123 -2463 0 ECG
+s20431.dat 212 200/mV 12 0 -4 32232 0 ECG
+#Age: 74  Sex: M
+#Comments: 
+#  This record has a number of ischemic episodes, one
+#  of which never reaches an end at the conclusion of the
+#  recording.
+#  Lead 0:
+#    This lead reveals 15 ischemic episodes, 14 rate-related
+#    episodes and many axis shifts.
+#  Lead 1:
+#    It shows 13 ischemic episodes as well as the axis shifts.
+#  Electrode locations were not recorded.
+#Symptoms during Holter recording: No data
+#Diagnoses: 
+#  Coronary artery disease
+#Treatment:
+#  Medications: 
+#    Beta-blocker
+#    Aspirin 
+#  Balloon Angioplasty: No
+#  Coronary Artery bypass Grafting: No
+#History: 
+#  Previous myocardial infarction
+#  Hypertension: No
+#  Left ventricular hypertrophy: No data
+#  Cardiomyopathy: No data
+#  Valve disease: No data
+#  Electrolyte abnormalities: No data
+#  Hypercapnia, anemia, hypotension, hyperventilation: No data
+#  Atrioventricular nodal conduction delay: No data
+#  Intraventricular conduction block: No data
+#  Previous Myocardial Infarction: Yes
+#  Previous tests:
+#    ECG stress test: No data
+#    Thallium/Stress echo: No data
+#    Left ventricular function: No data
+#    Echocardiogram: No data
+#    Coronary Arteriography: 
+#      Lesions in right coronary artery, left anterior descending coronary artery, left circumflex coronary artery
+#    Baseline ECG: No data
+#Holter Recording:
+#  Date: 10/12/1991
+#  Recorder: No data
