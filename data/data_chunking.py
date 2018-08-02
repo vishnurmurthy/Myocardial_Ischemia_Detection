@@ -81,11 +81,12 @@ for index, row in columns.iterrows():
 	#print(splicedData)
 	#chunkedSignal =  [signals[list(range(j,j+lengthOfChunk))] #[list(range(j,j+lengthOfChunk))]
 data = data.reset_index(drop=True)
+data.to_pickle("./"+FILENAME+ ".xz")
 #print(data)
-data1, data2, data3, data4, data5, data6, data7, data8, data9, data10 = np.array_split(data, 10)
+'''data1, data2, data3, data4, data5, data6, data7, data8, data9, data10 = np.array_split(data, 10)
 dataloop = [data1, data2, data3, data4, data5, data6, data7, data8, data9, data10]
 for i in range(len(dataloop)):
-	dataloop[i].to_pickle("./"+FILENAME+ "_" + str(i) +".pkl")
+	dataloop[i].to_pickle("./"+FILENAME+ "_" + str(i) +".xz")'''
 
 #print()
 #print("done", FILENAME)
