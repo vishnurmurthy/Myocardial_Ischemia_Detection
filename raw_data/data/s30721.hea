@@ -1,0 +1,52 @@
+s30721 3 250 21206500 11:13:00 19/01/2000
+s30721.dat 212 200/mV 12 0 -33 9986 0 E-S
+s30721.dat 212 200/mV 12 0 -58 -7053 0 A-S
+s30721.dat 212 200/mV 12 0 -14 9189 0 A-I
+#Age: 85  Sex: F
+#Comments:
+#  This record shows intraventricular conduction defects
+#  (probably RBBB), normal sinus rhythm, and both rate-
+#  related and ischemic episodes. Two rate-related episodes
+#  occured in lead 0, one at the beginning and one at the
+#  end of the record. There were no significant changes in
+#  leads 1 and 2 at these times. There were also several
+#  clear-cut ischemic episodes, revealed primarily in 
+#  leads 1 and 2. These episodes were further complicated
+#  by conduction changes probably associated with the
+#  ischemic process.
+#Symptoms during Holter recording: None reported
+#Diagnoses: 
+#  Coronary artery disease
+#  Hyperlipidemia
+#  Osteoarthritis
+#Treatment:
+#  Medications:
+#    Aspirin
+#    Lipitor
+#  Balloon Angioplasty: No
+#  Coronary Artery bypass Grafting: Yes, five grafts
+#History: 
+#  Angina 
+#  Hypertension: No
+#  Left ventricular hypertrophy: No
+#  Cardiomyopathy: No
+#  Valve disease: No
+#  Electrolyte abnormalities: No
+#  Hypercapnia, anemia, hypotension, hyperventilation: No
+#  Atrioventricular nodal conduction delay: No data
+#  Intraventricular conduction block: No data
+#  Previous Myocardial Infarction: Probably, based on abnormal wall motion.
+#  Previous tests:
+#    ECG stress test: Yes
+#      Date: January, 2000
+#      Findings: Negative for ST changes with inadequate heart rate
+#    Thallium/Stress echo: Fixed minor wall motiion abnormalities - inferior, posterior, and septal walls.
+#    Left ventricular function: 
+#      Ejection fraction 48%
+#    Echocardiogram: No data 
+#    Coronary Arteriography: 
+#      Yes, results unavailable
+#    Baseline ECG: No data
+#Holter Recording:
+#  Date: 19/01/2000
+#  Recorder: Zymed

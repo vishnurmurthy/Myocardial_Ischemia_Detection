@@ -1,0 +1,50 @@
+s30732 3 250 19290250 10:04:00 22/07/1999
+s30732.dat 212 200/mV 12 0 -7 -30014 0 E-S
+s30732.dat 212 200/mV 12 0 -16 -2419 0 A-S
+s30732.dat 212 200/mV 12 0 -10 -8669 0 A-I
+#Age: 82  Sex: M
+#Comments:
+#  This is the same patient as s30731. This record
+#  contain numerous axis shifts and one ischemic episode
+#  that is most prominent in leads 1 and 2, and did not
+#  reach threshold in lead 0.
+#
+#  Start of recording: 10:04:00 
+#  Symptoms           (from 0 - 10):
+#  Relative  Absolute
+#   0:58     11:02      angina   4
+#  19:33      5:37      angina   1
+#Symptoms during Holter recording:  Yes - angina 22/07/1999 @11:02am, 23/07/1999 @5:37am
+#Diagnoses: 
+#  Coronary artery disease
+#Treatment:
+#  Medications:
+#    Atenolol
+#    Aspirin
+#  Balloon Angioplasty: Yes, data incomplete
+#  Coronary Artery bypass Grafting: No
+#History: 
+#  Angina
+#  Hypertension: No
+#  Left ventricular hypertrophy: No
+#  Cardiomyopathy: No
+#  Valve disease: No
+#  Electrolyte abnormalities: No
+#  Hypercapnia, anemia, hypotension, hyperventilation: No
+#  Atrioventricular nodal conduction delay: No data
+#  Intraventricular conduction block: No data
+#  Previous Myocardial Infarction: No data
+#  Previous tests:
+#    ECG stress test: Yes
+#      Date: January, 2000
+#      Findings: Positive - 0.2 mV ST depression in II, avF, V4-V6.
+#    Thallium/Stress echo: Severe hypokinesis infero-lateral walls on exercise
+#    Left ventricular function: 
+#      Normal - ejection fraction 62%
+#    Echocardiogram: No data
+#    Coronary Arteriography: 
+#      Occlusions in three vessels: 100%left anterior descending coronary artery, 90% left circumflex coronary artery, 45% right coronary artery.
+#    Baseline ECG: No data
+#Holter Recording:
+#  Date: 22/07/1999
+#  Recorder: Zymed

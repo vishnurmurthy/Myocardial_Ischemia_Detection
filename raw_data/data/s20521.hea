@@ -1,0 +1,44 @@
+s20521 2 250 16905000 12:25:00 22/04/1998
+s20521.dat 212 200/mV 12 0 0 8648 0 V4
+s20521.dat 212 200/mV 12 0 46 18014 0 MLIII
+#Age: 45  Sex: M
+#Comments: 
+#  Hypertrophic cardiomyopathy in a patient with normal
+#  coronary arteries. There is baseline ST depression that
+#  is down-sloping. There are rate-related episodes of
+#  increased ST depression associated with increased HR,
+#  as seen at 3:20:26, for example. These episodes may be
+#  considered either ischemic or rate-related without
+#  penalty if using this record for algorithm evaluation.
+#Symptoms during Holter recording: No data
+#Diagnoses: 
+#  Non obstructive hypertrophic cardiomyopathy
+#Treatment:
+#  Medications: No
+#  Balloon Angioplasty: No data
+#  Coronary Artery bypass Grafting: No data
+#History: 
+#  Palpitations
+#  Hypertension: No data
+#  Left ventricular hypertrophy: Septum 19 mm
+#  Cardiomyopathy: Yes
+#  Valve disease: No
+#  Electrolyte abnormalities: No
+#  Hypercapnia, anemia, hypotension, hyperventilation: No
+#  Atrioventricular nodal conduction delay: No
+#  Intraventricular conduction block: No
+#  Previous Myocardial Infarction: No
+#  Previous tests:
+#    ECG stress test: No
+#    Thallium/Stress echo: Yes
+#      Positive
+#    Left ventricular function: 
+#      Normal
+#    Echocardiogram: No data
+#    Coronary Arteriography: 
+#      Normal coronary tree
+#    Baseline ECG: 
+#      Slight ST depression in leads II, III, avF, V6
+#Holter Recording:
+#  Date: 22/04/1998
+#  Recorder: Remco

@@ -1,0 +1,56 @@
+s30761 3 250 20467250 11:10:00 22/11/1999
+s30761.dat 212 200/mV 12 0 42 -31061 0 E-S
+s30761.dat 212 200/mV 12 0 -65 -21151 0 A-S
+s30761.dat 212 200/mV 12 0 -15 -12596 0 A-I
+#Age: 72  Sex: F
+#Comments: 
+#  Patient with coronary artery disease, and resting
+#  electrocardiogram is quite abnormal with ST down-sloping
+#  and biphasic T waves in leads 1 and 2. Ischemic episodes
+#  were present associated with increased heart rate. The
+#  changes were most convincing in lead 2 (with respect to
+#  ST morphology) but episodes were more frequent in lead 1.
+#Symptoms during Holter recording: None reported
+#Diagnoses: 
+#  Coronary artery disease
+#  Angina
+#  Hypertension
+#  Previous myocardial infarction
+#  Hypercholesterolemia
+#Treatment:
+#  Medications: 
+#    Atenolol
+#    Imdur
+#    Cozar
+#    Lipitor
+#    Aspirin
+#    Lasix
+#    Synthroid (held during Holter)
+#  Balloon Angioplasty: No
+#  Coronary Artery bypass Grafting: Yes
+#History: 
+#  Angina
+#  Hypertension: Yes
+#  Left ventricular hypertrophy: No data
+#  Cardiomyopathy: No data
+#  Valve disease: No data
+#  Electrolyte abnormalities: No data
+#  Hypercapnia, anemia, hypotension, hyperventilation: No data
+#  Atrioventricular nodal conduction delay: No 
+#  Intraventricular conduction block: No 
+#  Previous Myocardial Infarction: Yes, 1998
+#  Previous tests:
+#    ECG stress test: Yes
+#      Date: No data
+#      Findings: Positive, infero-lateral ischemia
+#    Thallium/Stress echo: Ejection fraction 50%, inferior hypokinesis
+#    Left ventricular function: 
+#      Abnormal - ejection fraction 40% - 50%
+#    Echocardiogram: No data
+#    Coronary Arteriography: 
+#      Lesion in right coronary artery
+#    Baseline ECG: 
+#      Sinus bradycardia at 55 bpm, infero-lateral ST depression and down-sloping. 
+#Holter Recording:
+#  Date: 22/11/1999
+#  Recorder: Zymed
