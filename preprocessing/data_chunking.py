@@ -43,9 +43,10 @@ import wfdb
 '''Labels: 
 0 - Ischemic (Episode) - ST; 
 1 - Heart-Rate Related (Episode) - RTST; 
-2 - Conduction Change (shift) - SCCST; 
-3 - Axis Shift (shift) - SST;
-4 - Normal?'''
+2 - Normal;
+3 - Conduction Change (shift) - SCCST; 
+4 - Axis Shift (shift) - SST;
+'''
 #signal = ...
 #columns = ...
 
