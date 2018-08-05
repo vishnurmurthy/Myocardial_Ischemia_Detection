@@ -1,10 +1,9 @@
 
 # coding: utf-8
 
-# In[1]:
+# In[ ]:
 
 
-#import matplotlib.pyplot as plt
 import numpy as np
 import math
 import os
@@ -33,7 +32,7 @@ from keras.layers import MaxPool2D
 from keras.optimizers import SGD
 
 
-# In[2]:
+# In[ ]:
 
 
 large_data = pd.DataFrame({"Signal":[], "Label":[]})
@@ -55,12 +54,12 @@ for i in range(len(datafiles)):
 	for count, signal in enumerate(dat['Signal']):
 		dat['Signal'][count] = dat['Signal'][count] - np.mean(dat['Signal'][count])
 		dat['Signal'][count] = dat['Signal'][count] / np.std(dat['Signal'][count])
-	print(i, "out of: ", len(datafiles), "file: ", datafiles[i])
+	print(i, "of", len(datafiles), "File: ", datafiles[i])
 	large_data = large_data.append(dat)
 os.chdir('../')
 
 
-# In[3]:
+# In[ ]:
 
 
 large_data = large_data[large_data.Label != 'scct'] #dropping rows with shifts, we are not classifying
@@ -87,17 +86,8 @@ large_data['Label'] = large_data['Label'].astype('category').cat.codes
 
 large_data = large_data.sample(frac=1).reset_index(drop=True)
 
-plt.plot(np.arange(0, 250), large_data['Signal'][0])
 
-LEN = large_data.shape[0]
-
-for i in range(0, 676483, 67000):
-    plt.figure(figsize = (10, 4))
-    plt.plot(np.arange(0, 250), large_data['Signal'][i])
-    plt.show()
-
-
-# In[4]:
+# In[ ]:
 
 
 y = large_data['Label'].values
@@ -112,7 +102,7 @@ print("X")
 print(X.shape)
 
 
-# In[5]:
+# In[ ]:
 
 
 X_train, X_val, y_train, y_val = train_test_split(X, y, test_size = 0.2)
@@ -132,7 +122,7 @@ print("Validation")
 print(X_val.shape, y_val.shape)
 
 
-# In[6]:
+# In[ ]:
 
 
 print(X_train[0].shape)
@@ -168,7 +158,7 @@ print(y_train.shape)
 
 
 print(y_train.shape)
-model.fit(X_train, y_train, epochs= 12, batch_size= 2, validation_data=(X_val, y_val), verbose=1)
+model.fit(X_train, y_train, epochs= 120, batch_size= 2, validation_data=(X_val, y_val), verbose=1)
 
 
 # In[ ]:
@@ -176,73 +166,10 @@ model.fit(X_train, y_train, epochs= 12, batch_size= 2, validation_data=(X_val, y
 
 #Save the model
 
-model.save_weights('BWSI2018model_weights.h5')
+model.save("BWSI2018model_v3_1.h5")
+
+model.save_weights('BWSI2018model_v3_1_weights.h5')
 
 with open('BWSI2018model_architecture.json', 'w') as f:
     f.write(model.to_json())
-
-
-# In[ ]:
-
-
-test_pred = pd.DataFrame(model.predict(X_val))
-test_predict = test_pred.idxmax(axis=1)
-test_labels = [ np.where(label==1)[0][0] for label in y_val]
-test_labels_one_hot = pd.DataFrame(y_val)
-test_pred.head(5)
-
-
-# In[ ]:
-
-
-fpr = {}
-tpr = {}
-roc_auc = {}
-stage_dict = ['st', 'rtst', 'normal']
-for i in range(3):
-    fpr[i], tpr[i], _ = metrics.roc_curve(test_labels_one_hot.iloc[:, i], test_pred.iloc[:, i])
-    roc_auc[i] = metrics.auc(fpr[i], tpr[i])
-    plt.plot(fpr[i], tpr[i], label = stage_dict[i] + ', ' + str(i))
-plt.plot([0, 1], [0, 1])
-plt.xlabel('False Positive Rate')
-plt.ylabel('True Positive Rate')
-plt.title('Multi-Class ROC Curve')
-plt.legend()
-plt.show()
-
-fpr["micro"], tpr["micro"], _ = metrics.roc_curve(test_labels_one_hot.values.ravel(), test_pred.values.ravel())
-roc_auc = metrics.auc(fpr["micro"], tpr["micro"])
-
-
-# In[ ]:
-
-
-print("ROC: ", roc_auc)
-print("ACC: ", metrics.accuracy_score(test_labels, test_predict))
-cm = metrics.confusion_matrix(test_labels, test_predict)
-
-'''
-ROC:  0.8388993698385805
-ACC:  0.6494009475450305
-'''
-
-print(cm/len(test_labels))
-# Show confusion matrix in a separate window
-plt.matshow(cm/len(test_labels), cmap='gray')
-
-plt.title('Normalized Confusion matrix\n')
-plt.colorbar()
-plt.ylabel('True label')
-plt.xlabel('Predicted label')
-plt.show()
-
-print(cm)
-
-plt.matshow(cm, cmap='gray')
-
-plt.title('Confusion matrix\n')
-plt.colorbar()
-plt.ylabel('True label')
-plt.xlabel('Predicted label')
-plt.show()
 
