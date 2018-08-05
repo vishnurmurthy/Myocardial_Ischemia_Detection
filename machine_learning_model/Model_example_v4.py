@@ -1,10 +1,6 @@
 
 # coding: utf-8
 
-# In[83]:
-
-
-import matplotlib.pyplot as plt
 import numpy as np
 import math
 import os
@@ -24,10 +20,6 @@ from sklearn.model_selection import train_test_split
 
 # In[2]:
 
-
-get_ipython().system(' git clone https://github.com/vishnurmurthy/Myocardial_Ischemia_Detection')
-get_ipython().system('ls')
-
 large_data = pd.DataFrame({"Signal":[], "Label":[]})
 large_data
 
@@ -41,22 +33,16 @@ datafiles = ['s20011.xz','s20131.xz','s20251.xz','s20341.xz','s20471.xz','s20591
 's20451.xz','s20571.xz','s30701.xz','s30791.xz','s20121.xz','s20241.xz','s20331.xz','s20461.xz','s20581.xz','s30711.xz', 
 's30732.xz','s20041.xz','s20161.xz','s30801.xz', 's20261.xz',]
 
-os.chdir('Myocardial_Ischemia_Detection/')
-get_ipython().system('ls')
+os.chdir('../processed_data')
 
-
-# In[4]:
-
-
-os.chdir('Myocardial_Ischemia_Detection/processed_data')
-for i in datafiles:
-  dat = pd.read_pickle(i)
-  for count, signal in enumerate(dat['Signal']):
-    dat['Signal'][count] = dat['Signal'][count] - np.mean(dat['Signal'][count])
-    dat['Signal'][count] = dat['Signal'][count] / np.std(dat['Signal'][count])
-  large_data = large_data.append(dat)
-os.chdir('../..')
-
+for i in range(len(datafiles)):
+        dat = pd.read_pickle(datafiles[i])
+        for count, signal in enumerate(dat['Signal']):
+                dat['Signal'][count] = dat['Signal'][count] - np.mean(dat['Signal'][count])
+                dat['Signal'][count] = dat['Signal'][count] / np.std(dat['Signal'][count])
+        print(i, "of", len(datafiles), "File: ", datafiles[i])
+        large_data = large_data.append(dat)
+os.chdir('../')
 
 # In[5]:
 
@@ -84,19 +70,6 @@ large_data['Label'] = large_data['Label'].astype('category').cat.codes
 #randomly shuffle dataframe
 
 large_data = large_data.sample(frac=1).reset_index(drop=True)
-
-plt.plot(np.arange(0, 250), large_data['Signal'][0])
-
-LEN = large_data.shape[0]
-
-for i in range(0, 676483, 67000):
-    plt.figure(figsize = (10, 4))
-    plt.plot(np.arange(0, 250), large_data['Signal'][i])
-    plt.show()
-
-
-# In[17]:
-
 
 y = large_data['Label'].values
 X = []
@@ -172,7 +145,7 @@ DenseBlock(model, 3, (128, 64, 32))
 model.add(tf.keras.layers.Dense(32, activation = 'relu'))
 model.add(tf.keras.layers.Dense(3, activation = 'softmax'))
 
-model.compile(loss='categorical_crossentropy', optimizer=tf.train.AdamOptimizer(learning_rate=0.001), metrics=['accuracy'])
+model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.summary()
 
 
@@ -200,9 +173,11 @@ X_val = X_val.reshape(len(X_val), X_val[0].shape[0], 1)
 # In[ ]:
 
 
-model.fit(X_train, y_train, validation_data = (X_val, y_val), verbose = True, epochs=25)
+model.fit(X_train, y_train, validation_data = (X_val, y_val), verbose = True, callbacks = [keras.callbacks.ModelCheckpoint("weights.{epoch:02d}-{val_loss:.2f}.h5", monitor='val_loss', verbose=0, save_best_only=False, save_weights_only=False, mode='auto', period=1)], epochs=150)
 
+model.save("BWSI2018_final_weights.h5")
 
+model.save_weights("BWSI2018_final_save_weights.h5")
 # In[78]:
 
 

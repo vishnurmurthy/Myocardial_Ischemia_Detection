@@ -49,12 +49,12 @@ datafiles = ['s20011.xz','s20131.xz','s20251.xz','s20341.xz','s20471.xz','s20591
 's30732.xz','s20041.xz','s20161.xz','s30801.xz', 's20261.xz',]
 
 os.chdir('../processed_data')
-for i in datafiles:
-	dat = pd.read_pickle(i)
+for i in range(len(datafiles)):
+	dat = pd.read_pickle(datafiles[i])
 	for count, signal in enumerate(dat['Signal']):
 		dat['Signal'][count] = dat['Signal'][count] - np.mean(dat['Signal'][count])
 		dat['Signal'][count] = dat['Signal'][count] / np.std(dat['Signal'][count])
-	print(i)
+	print(i, "of", len(datafiles), "File: ", datafiles[i])
 	large_data = large_data.append(dat)
 os.chdir('../')
 
@@ -158,7 +158,7 @@ print(y_train.shape)
 
 
 print(y_train.shape)
-model.fit(X_train, y_train, epochs= 12, batch_size= 2, validation_data=(X_val, y_val), verbose=1)
+model.fit(X_train, y_train, epochs= 120, batch_size= 2, validation_data=(X_val, y_val), verbose=1)
 
 
 # In[ ]:
