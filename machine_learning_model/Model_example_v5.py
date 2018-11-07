@@ -16,7 +16,6 @@ from scipy.signal import *
 from sklearn.model_selection import train_test_split
 
 large_data = pd.DataFrame({"Signal":[], "Label":[]})
-large_data
 
 datafiles = ['s20011.xz','s20131.xz','s20251.xz','s20341.xz','s20471.xz','s20591.xz','s30721.xz','s20021.xz','s20141.xz',
 's20351.xz','s20481.xz','s20601.xz','s30731.xz','s20031.xz','s20151.xz','s20271.xz','s20361.xz','s20491.xz','s20621.xz',
@@ -28,28 +27,19 @@ datafiles = ['s20011.xz','s20131.xz','s20251.xz','s20341.xz','s20471.xz','s20591
 's20451.xz','s20571.xz','s30701.xz','s30791.xz','s20121.xz','s20241.xz','s20331.xz','s20461.xz','s20581.xz','s30711.xz', 
 's30732.xz','s20041.xz','s20161.xz','s30801.xz', 's20261.xz',]
 
-os.chdir('/myo_data')
+os.chdir('../processed_data')
 for i in datafiles:
   dat = pd.read_pickle(i)
   for count, signal in enumerate(dat['Signal']):
     dat['Signal'][count] = dat['Signal'][count] - np.mean(dat['Signal'][count])
     dat['Signal'][count] = dat['Signal'][count] / np.std(dat['Signal'][count])
   large_data = large_data.append(dat)
+  print(i)
+
+print("preprocessing done")
 
 
-os.chdir('../processed_data')
-
-for i in range(len(datafiles)):
-        dat = pd.read_pickle(datafiles[i])
-        for count, signal in enumerate(dat['Signal']):
-                dat['Signal'][count] = dat['Signal'][count] - np.mean(dat['Signal'][count])
-                dat['Signal'][count] = dat['Signal'][count] / np.std(dat['Signal'][count])
-        print(i, "of", len(datafiles), "File: ", datafiles[i])
-        large_data = large_data.append(dat)
-os.chdir('../')
-
-
-
+os.chdir('../machine_learning_model')
 
 large_data = large_data[large_data.Label != 'scct'] #dropping rows with shifts, we are not classifying
 large_data = large_data[large_data.Label != 'sst']
@@ -89,13 +79,13 @@ def ConvBlock(model, layers):
         model.add(tf.keras.layers.MaxPooling1D(2, strides=2))
         model.add(tf.keras.layers.Dropout(.25))
     model.add(tf.keras.layers.GlobalAveragePooling1D())
-    
+
+
 def DenseBlock(model, layers, neurons = None):
     for i in range(layers):
         model.add(tf.keras.layers.Dense(neurons[i], activation = 'relu'))
         model.add(tf.keras.layers.Dropout(.25))
     model.add(tf.keras.layers.Flatten())
-        
 
 
 
@@ -162,19 +152,7 @@ X_val = X_val.reshape(len(X_val), X_val[0].shape[0], 1)
 ################################################################
 
 
-model.fit(X_train, y_train, validation_data = (X_val, y_val), verbose = True, epochs=25)
-
-
-# In[ ]:
-
-
-model.fit(X_train, y_train, validation_data = (X_val, y_val), verbose = True, callbacks = [keras.callbacks.ModelCheckpoint("weights.{epoch:02d}-{val_loss:.2f}.h5", monitor='val_loss', verbose=0, save_best_only=False, save_weights_only=False, mode='auto', period=1)], epochs=150)
-
-model.save("BWSI2018_final_weights.h5")
-
-model.save_weights("BWSI2018_final_save_weights.h5")
-# In[78]:
-
+model.fit(X_train, y_train, validation_data = (X_val, y_val), verbose = True, epochs=50)
 
 
 test_pred = pd.DataFrame(model.predict(X_val))
@@ -196,7 +174,7 @@ plt.xlabel('False Positive Rate')
 plt.ylabel('True Positive Rate')
 plt.title('Multi-Class ROC Curve')
 plt.legend()
-plt.show()
+plt.savefig("rocauc.png")
 
 fpr["micro"], tpr["micro"], _ = metrics.roc_curve(test_labels_one_hot.values.ravel(), test_pred.values.ravel())
 roc_auc = metrics.auc(fpr["micro"], tpr["micro"])
