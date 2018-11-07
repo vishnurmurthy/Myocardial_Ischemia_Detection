@@ -212,6 +212,4 @@ plt.xlabel('Predicted label')
 plt.show()
 
 
-model.save("BWSI2018v4.h5")
-
-model.save("BWSI2018.h5")
+model.save("BWSI2018v5.h5")
